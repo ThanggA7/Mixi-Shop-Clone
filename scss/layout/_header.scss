@@ -21,6 +21,9 @@
     @include abstracts.breakpoint(sm) {
       display: block;
     }
+    @include abstracts.breakpoint(md) {
+      display: block;
+    }
   }
 }
 
