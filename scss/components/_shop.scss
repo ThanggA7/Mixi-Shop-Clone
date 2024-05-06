@@ -1,0 +1,144 @@
+@use "../abstracts";
+.shop {
+  display: flex;
+  @include abstracts.breakpoint("lg") {
+    flex-direction: column;
+  }
+  @include abstracts.breakpoint("sm") {
+    flex-direction: column;
+  }
+  &__title {
+    @include abstracts.breakpoint("sm") {
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 750;
+    }
+    @include abstracts.breakpoint("lg") {
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 750;
+    }
+    margin-top: 25px;
+    color: black;
+    font: {
+      size: 2.3rem;
+      weight: 650;
+    }
+  }
+
+  &__link {
+    @include abstracts.breakpoint("sm") {
+      text-align: center;
+    }
+    @include abstracts.breakpoint("lg") {
+      text-align: center;
+    }
+    margin-top: 15px;
+    font-size: 1.3rem;
+  }
+  &__img {
+    margin-top: 25px;
+    @include abstracts.breakpoint("sm") {
+      width: 100%;
+    }
+    @include abstracts.breakpoint("lg") {
+      width: 100%;
+    }
+    @include abstracts.breakpoint("xl") {
+      width: 100%;
+    }
+  }
+}
+.link__act {
+  opacity: 0.6;
+}
+.filter {
+  margin-top: 35px;
+  width: 45%;
+}
+
+.products-shop {
+  margin-top: 20px;
+}
+.filter__title {
+  @include abstracts.breakpoint("lg") {
+    display: none;
+  }
+  color: black;
+  font: {
+    size: 1.7rem;
+    weight: 650;
+  }
+}
+
+.filter__title::after {
+  content: "";
+  display: block;
+  width: 35px;
+  height: 4px;
+  background-color: #dedede;
+  margin-top: 7px;
+}
+
+.products-shop a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.products-shop a:hover {
+  transform: translateY(-10px);
+  transition: 0.35s ease;
+}
+
+.products__title--name {
+  margin-top: 15px;
+  color: black;
+  font: {
+    size: 1.4rem;
+    weight: 650;
+  }
+}
+
+.products__quantity {
+  margin-top: 5px;
+  text-transform: uppercase;
+  color: #007784;
+  font-size: 1.25rem;
+}
+.products-shop a:hover .products__quantity {
+  color: #8224e3;
+}
+.products__list {
+  @include abstracts.breakpoint("lg") {
+    display: none;
+  }
+  margin-top: 25px;
+}
+.nav__list {
+  margin-top: 20px;
+}
+
+.hash__link {
+  color: #007784;
+}
+
+.hash__link:hover {
+  color: #8224e3;
+}
+.ads {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  width: 250px;
+  height: 600px;
+  background-color: #dedede;
+  @include abstracts.breakpoint("lg") {
+    width: 222%;
+    height: 200px;
+  }
+}

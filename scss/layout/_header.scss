@@ -1,0 +1,114 @@
+@use "../abstracts";
+%flexItemsCenter {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  padding: 5px;
+  background-color: var(--header-bg-color);
+}
+
+.top-bar {
+  @extend %flexItemsCenter;
+  justify-content: space-between;
+
+  &__more--img {
+    display: none;
+    @include abstracts.breakpoint(lg) {
+      display: block;
+    }
+    @include abstracts.breakpoint(sm) {
+      display: block;
+    }
+  }
+}
+
+.navbar {
+  @include abstracts.breakpoint(lg) {
+    display: none;
+  }
+
+  margin-left: 20px;
+  &__list {
+    @extend %flexItemsCenter;
+    gap: 28px;
+  }
+
+  &__link {
+    position: relative;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.02rem;
+    color: var(--text-color);
+  }
+
+  &__link::after {
+    margin-top: 5px;
+    position: absolute;
+    display: none;
+    content: "";
+    min-width: 100%;
+    height: 3px;
+    background-color: var(--text-color);
+    transition: 0.3s ease;
+  }
+  &__link:hover::after {
+    background-color: #007784;
+    display: block;
+
+    transition: 0.3s ease;
+  }
+
+  &__link:hover {
+    color: #007784;
+  }
+}
+
+.top-act {
+  @include abstracts.breakpoint(lg) {
+    display: none;
+  }
+  margin-left: auto;
+  &__group {
+    @extend %flexItemsCenter;
+    gap: 20px;
+  }
+
+  &__btn {
+    margin-left: 20px;
+  }
+}
+
+.phone,
+.cart {
+  gap: 10px;
+  @extend %flexItemsCenter;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.phone__number {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.top-act-group__line {
+  width: 1px;
+  height: 30px;
+  background-color: #e8e8e8;
+}
+.icon__search {
+  @include abstracts.breakpoint(lg) {
+    display: none;
+  }
+  width: 16.27px;
+  height: 16px;
+}
+
+.icon-responsive {
+  display: none;
+  @include abstracts.breakpoint(lg) {
+    display: block;
+  }
+}

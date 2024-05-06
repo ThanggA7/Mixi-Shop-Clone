@@ -1,0 +1,17 @@
+@use "../abstracts";
+
+.logo {
+  &__image {
+    width: 151px;
+    height: 90px;
+    @include abstracts.breakpoint(md) {
+      margin-left: 150px;
+    }
+    @include abstracts.breakpoint(sm) {
+      width: 120.66px;
+      height: 70px;
+      object-fit: cover;
+      margin-left: 35px;
+    }
+  }
+}

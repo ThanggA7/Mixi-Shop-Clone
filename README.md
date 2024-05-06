@@ -1,1 +1,1 @@
-# Mixi-Shop-Clone
+Clone https://shop.mixigaming.com with SCSS
