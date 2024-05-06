@@ -141,4 +141,10 @@
     width: 222%;
     height: 200px;
   }
+  &__img {
+    width: 250px;
+    height: 600px;
+    object-fit: cover;
+    overflow: hidden;
+  }
 }
