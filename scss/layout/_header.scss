@@ -12,7 +12,6 @@
 .top-bar {
   @extend %flexItemsCenter;
   justify-content: space-between;
-
   &__more--img {
     display: none;
     @include abstracts.breakpoint(lg) {
@@ -80,6 +79,9 @@
 
   &__btn {
     margin-left: 20px;
+    @include abstracts.breakpoint(lg) {
+      display: none;
+    }
   }
 }
 
