@@ -1,4 +1,15 @@
 @use "../abstracts";
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+%flexItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .shop {
   display: flex;
   @include abstracts.breakpoint("lg") {
@@ -128,11 +139,10 @@
   color: #8224e3;
 }
 .ads {
+  @extend %flexItem;
   border-radius: 10px;
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+
   margin-top: 50px;
   width: 250px;
   height: 600px;
@@ -147,4 +157,116 @@
     object-fit: cover;
     overflow: hidden;
   }
+}
+
+.ao_img {
+  width: 600px;
+  height: 700px;
+  object-fit: cover;
+  @include abstracts.breakpoint("lg") {
+    width: 100%;
+  }
+  @include abstracts.breakpoint("sm") {
+    width: 100%;
+  }
+}
+
+.size__img {
+  width: 550px;
+  height: 300px;
+  object-fit: cover;
+  @include abstracts.breakpoint("sm") {
+    width: 100%;
+  }
+}
+
+.size {
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  gap: 160px;
+  @include abstracts.breakpoint("lg") {
+    gap: 150px;
+  }
+  @include abstracts.breakpoint("sm") {
+    gap: 50px;
+  }
+}
+
+.size__table {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #1111117e;
+  width: 300px;
+  height: 35px;
+  border-radius: 15px;
+  background-color: transparent;
+}
+
+.act__cart {
+  cursor: pointer;
+  border-radius: 20px;
+  @extend %flexItem;
+  width: 250px;
+  height: 35px;
+  background-color: #dda592;
+}
+.btn__cart {
+  padding: 13px 30px;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 650;
+}
+
+.content {
+  margin-top: 35px;
+}
+
+.info__product-title {
+  font-size: 2.6rem;
+  font-weight: 600;
+  color: black;
+  @include abstracts.breakpoint("sm") {
+    margin-top: 20px;
+  }
+}
+.info__product-rate {
+  padding: 20px 0;
+}
+.info__product--desc {
+  font-size: 1.5rem;
+  color: #007784;
+
+  &:hover {
+    color: #8224e3;
+  }
+}
+.prc {
+  font-weight: 600;
+  font-size: 2.4rem;
+  color: #111111;
+}
+.title__size {
+  margin-top: 10px;
+  padding: 0 0 20px 0;
+  font-size: 1.6rem;
+  color: black;
+}
+
+.add-to-cart {
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.card__number {
+  text-align: center;
+  color: black;
+  font-size: 2rem;
+  border-radius: 99px;
+  width: 90px;
+  height: 40px;
+}
+
+.box {
 }

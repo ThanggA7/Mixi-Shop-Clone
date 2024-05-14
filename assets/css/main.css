@@ -1475,13 +1475,7 @@ textarea {
 
 .item:hover {
   transform: translateY(-10px);
-  opacity: 0.8;
-  transition: 0.3s ease;
-}
-
-.item img:hover {
-  border-radius: 10px;
-  transform: scale(0.9);
+  opacity: 0.9;
   transition: 0.3s ease;
 }
 
@@ -1520,9 +1514,8 @@ textarea {
 
 .introduction {
   margin-top: 100px;
-  background-image: url(https://scontent.fsgn2-3.fna.fbcdn.net/v/t39.30808-6/415563736_381263454439897_2555990797734012562_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEGQUUdgSTghoTwItV3jszPkGY85Eorm-yQZjzkSiub7KYQqRM8Uhvi0gMSW05dD-wK031M2zeSksKOWCl1rUZn&_nc_ohc=Iqez_miT2PUQ7kNvgEQ8L6v&_nc_ht=scontent.fsgn2-3.fna&oh=00_AfAAXmoY92vQIYBBqMvBH14utbDO9GaxT7F5JHicpj5JNQ&oe=663D4502);
+  background-image: url(https://shop.mixigaming.com/wp-content/uploads/sb-instagram-feed-images/436293785_990899169282058_4280632536919000158_nfull.jpg);
   display: flex;
-  background-position: 50% 30%;
   background-size: cover;
   align-items: center;
   justify-content: center;
@@ -1634,6 +1627,18 @@ textarea {
 .feedback__act--ig {
   font-size: 1.3rem;
   background-color: #4eb7b8;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.act__cart, .ads {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .shop {
@@ -1788,10 +1793,7 @@ textarea {
 
 .ads {
   border-radius: 10px;
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   margin-top: 50px;
   width: 250px;
   height: 600px;
@@ -1808,6 +1810,131 @@ textarea {
   height: 600px;
   object-fit: cover;
   overflow: hidden;
+}
+
+.ao_img {
+  width: 600px;
+  height: 700px;
+  object-fit: cover;
+}
+@media (max-width: 991.98px) {
+  .ao_img {
+    width: 100%;
+  }
+}
+@media (max-width: 575.98px) {
+  .ao_img {
+    width: 100%;
+  }
+}
+
+.size__img {
+  width: 550px;
+  height: 300px;
+  object-fit: cover;
+}
+@media (max-width: 575.98px) {
+  .size__img {
+    width: 100%;
+  }
+}
+
+.size {
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  gap: 160px;
+}
+@media (max-width: 991.98px) {
+  .size {
+    gap: 150px;
+  }
+}
+@media (max-width: 575.98px) {
+  .size {
+    gap: 50px;
+  }
+}
+
+.size__table {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: rgba(17, 17, 17, 0.4941176471);
+  width: 300px;
+  height: 35px;
+  border-radius: 15px;
+  background-color: transparent;
+}
+
+.act__cart {
+  cursor: pointer;
+  border-radius: 20px;
+  width: 250px;
+  height: 35px;
+  background-color: #dda592;
+}
+
+.btn__cart {
+  padding: 13px 30px;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 650;
+}
+
+.content {
+  margin-top: 35px;
+}
+
+.info__product-title {
+  font-size: 2.6rem;
+  font-weight: 600;
+  color: black;
+}
+@media (max-width: 575.98px) {
+  .info__product-title {
+    margin-top: 20px;
+  }
+}
+
+.info__product-rate {
+  padding: 20px 0;
+}
+
+.info__product--desc {
+  font-size: 1.5rem;
+  color: #007784;
+}
+.info__product--desc:hover {
+  color: #8224e3;
+}
+
+.prc {
+  font-weight: 600;
+  font-size: 2.4rem;
+  color: #111111;
+}
+
+.title__size {
+  margin-top: 10px;
+  padding: 0 0 20px 0;
+  font-size: 1.6rem;
+  color: black;
+}
+
+.add-to-cart {
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.card__number {
+  text-align: center;
+  color: black;
+  font-size: 2rem;
+  border-radius: 99px;
+  width: 90px;
+  height: 40px;
 }
 
 html.dark {
