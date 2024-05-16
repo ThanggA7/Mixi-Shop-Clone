@@ -7,11 +7,16 @@
   background-size: 6500px 6500px;
   top: 165px;
   left: 880px;
+  display: none;
 }
 
-  // #check__mirro {
-  //   width: 350px;
-  //   height: 350px;
-  //   border: 1px solid #111111;
-  //   position: fixed;
-  // }
+#image {
+  display: block;
+}
+
+// #check__mirro {
+//   width: 350px;
+//   height: 350px;
+//   border: 1px solid #111111;
+//   position: fixed;
+// }

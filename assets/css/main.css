@@ -2035,6 +2035,11 @@ input::-webkit-inner-spin-button {
   background-size: 6500px 6500px;
   top: 165px;
   left: 880px;
+  display: none;
+}
+
+#image {
+  display: block;
 }
 
 html.dark {
