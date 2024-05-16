@@ -1910,7 +1910,7 @@ input::-webkit-inner-spin-button {
 
 .prc {
   font-weight: 600;
-  font-size: 2.4rem;
+  font-size: 2.7rem;
   color: #111111;
 }
 
@@ -1935,6 +1935,106 @@ input::-webkit-inner-spin-button {
   border-radius: 99px;
   width: 90px;
   height: 40px;
+}
+
+.size__desc {
+  color: black;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.slide__product {
+  margin-top: 30px;
+}
+
+.slide__header--desc {
+  font-size: 2rem;
+  color: black;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+@media (max-width: 575.98px) {
+  .slide__header--desc {
+    text-align: center;
+    font-size: 1.6rem;
+  }
+}
+
+.slide__show {
+  width: 100%;
+  max-width: 1340px;
+  position: relative;
+}
+.slide__show-nav {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc(25% - 12px);
+  gap: 16px;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+@media (max-width: 575.98px) {
+  .slide__show-nav {
+    grid-auto-columns: 100%;
+  }
+}
+@media (max-width: 991.98px) {
+  .slide__show-nav {
+    grid-auto-columns: calc(50% - 12px);
+  }
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.slide__show i {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #dedede;
+  line-height: 50px;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 1.25rem;
+}
+
+.slide__show i:first-child {
+  left: 0;
+}
+
+.slide__show i:last-child {
+  right: 0;
+}
+
+@media (max-width: 575.98px) {
+  .image {
+    width: 190px;
+    height: 253px;
+    object-fit: cover;
+  }
+}
+@media (max-width: 991.98px) {
+  .image {
+    grid-auto-columns: calc(50% - 12px);
+  }
+}
+
+#mirro {
+  width: 450px;
+  height: 550px;
+  border: 3px solid #2f2f2d;
+  position: absolute;
+  background-image: url("https://shop.mixigaming.com/wp-content/uploads/2021/01/Ao-ba-lo-Mixi-SO-QUA-SO-QUA-scaled.jpg");
+  background-size: 6500px 6500px;
+  top: 165px;
+  left: 880px;
 }
 
 html.dark {

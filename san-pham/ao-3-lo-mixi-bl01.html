@@ -56,7 +56,10 @@
       href="https://unpkg.com/css.gg@2.0.0/icons/css/shopping-cart.css"
       rel="stylesheet"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="../assets/css/main.css" />
     <script src="../assets/js/script.js"></script>
   </head>
@@ -74,11 +77,19 @@
         <div class="content">
           <div class="row">
             <div class="col-lg-6">
-              <img
-                src="https://shop.mixigaming.com/wp-content/uploads/2021/01/Ao-ba-lo-Mixi-SO-QUA-SO-QUA-scaled.jpg"
-                alt="BL01"
-                class="ao_img"
-              />
+              <div class="image__shop">
+                <img
+                  src="https://shop.mixigaming.com/wp-content/uploads/2021/01/Ao-ba-lo-Mixi-SO-QUA-SO-QUA-scaled.jpg"
+                  alt="BL01"
+                  class="ao_img"
+                  id="image"
+                />
+
+                <div class="mirro" id="mirro"></div>
+
+
+                <div  id="check__mirro"></div>
+              </div>
             </div>
 
             <div class="col-lg-6">
@@ -166,6 +177,73 @@
           <div class="slide__header">
             <p class="slide__header--desc">SẢN PHẨM TƯƠNG TỰ</p>
           </div>
+
+          <div class="slide__show">
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <ul class="slide__show-nav">
+              <li class="card">
+                <div class="img">
+                  <img
+                    src="https://shop.mixigaming.com/wp-content/uploads/2021/01/Ao-ba-lo-OI-GIOI-OI-300x400.jpg"
+                    alt="img"
+                    class="image"
+                  />
+                </div>
+                <span class="card__hashtag"> ÁO BA LỖ</span>
+                <h2 class="card__title">Áo 3 Lỗ Mixi – BL03</h2>
+                <p class="card__price">99,000 ₫</p>
+              </li>
+              <li class="card">
+                <div class="img">
+                  <img
+                    src="https://shop.mixigaming.com/wp-content/uploads/2021/01/Ao-ba-lo-OI-GIOI-OI-300x400.jpg"
+                    alt="img"
+                    class="image"
+                  />
+                </div>
+                <span class="card__hashtag"> ÁO BA LỖ</span>
+                <h2 class="card__title">Áo 3 Lỗ Mixi – BL03</h2>
+                <p class="card__price">99,000 ₫</p>
+              </li>
+              <li class="card">
+                <div class="img">
+                  <img
+                    src="https://shop.mixigaming.com/wp-content/uploads/2021/01/Ao-ba-lo-OI-GIOI-OI-300x400.jpg"
+                    alt="img"
+                    class="image"
+                  />
+                </div>
+                <span class="card__hashtag"> ÁO BA LỖ</span>
+                <h2 class="card__title">Áo 3 Lỗ Mixi – BL03</h2>
+                <p class="card__price">99,000 ₫</p>
+              </li>
+              <li class="card">
+                <div class="img">
+                  <img
+                    src="https://shop.mixigaming.com/wp-content/uploads/2021/01/Ao-ba-lo-OI-GIOI-OI-300x400.jpg"
+                    alt="img"
+                    class="image"
+                  />
+                </div>
+                <span class="card__hashtag"> ÁO BA LỖ</span>
+                <h2 class="card__title">Áo 3 Lỗ Mixi – BL03</h2>
+                <p class="card__price">99,000 ₫</p>
+              </li>
+              <li class="card">
+                <div class="img">
+                  <img
+                    src="https://shop.mixigaming.com/wp-content/uploads/2021/01/Ao-ba-lo-OI-GIOI-OI-300x400.jpg"
+                    alt="img"
+                    class="image"
+                  />
+                </div>
+                <span class="card__hashtag"> ÁO BA LỖ</span>
+                <h2 class="card__title">Áo 3 Lỗ Mixi – BL03</h2>
+                <p class="card__price">99,000 ₫</p>
+              </li>
+            </ul>
+            <i id="right" class="fa-solid fa-angle-right"></i>
+          </div>
         </div>
       </div>
     </main>
@@ -173,5 +251,7 @@
     <script>
       load("footer", "../template/footer.html");
     </script>
+
+    <script src="../assets/js/effectzoom.js"></script>
   </body>
 </html>
