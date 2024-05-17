@@ -1817,12 +1817,22 @@ input::-webkit-inner-spin-button {
   height: 700px;
   object-fit: cover;
 }
+@media (max-width: 1199.98px) {
+  .ao_img {
+    width: 450px;
+  }
+}
+@media (max-width: 575.98px) {
+  .ao_img {
+    width: 100%;
+  }
+}
 @media (max-width: 991.98px) {
   .ao_img {
     width: 100%;
   }
 }
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .ao_img {
     width: 100%;
   }
@@ -1838,21 +1848,32 @@ input::-webkit-inner-spin-button {
     width: 100%;
   }
 }
+@media (max-width: 1199.98px) {
+  .size__img {
+    width: 100%;
+  }
+}
+@media (max-width: 767.98px) {
+  .size__img {
+    width: 100%;
+    height: 205px;
+  }
+}
 
 .size {
   margin-top: 35px;
   display: flex;
   align-items: center;
-  gap: 160px;
+  justify-content: space-between;
 }
 @media (max-width: 991.98px) {
   .size {
-    gap: 150px;
+    justify-content: space-between;
   }
 }
 @media (max-width: 575.98px) {
   .size {
-    gap: 50px;
+    justify-content: space-between;
   }
 }
 
@@ -1865,6 +1886,11 @@ input::-webkit-inner-spin-button {
   border-radius: 15px;
   background-color: transparent;
 }
+@media (max-width: 575.98px) {
+  .size__table {
+    width: 250px;
+  }
+}
 
 .act__cart {
   cursor: pointer;
@@ -1872,6 +1898,11 @@ input::-webkit-inner-spin-button {
   width: 250px;
   height: 35px;
   background-color: #dda592;
+}
+@media (max-width: 575.98px) {
+  .act__cart {
+    width: 200px;
+  }
 }
 
 .btn__cart {
@@ -1927,6 +1958,11 @@ input::-webkit-inner-spin-button {
   align-items: center;
   gap: 25px;
 }
+@media (max-width: 575.98px) {
+  .add-to-cart {
+    gap: 55px;
+  }
+}
 
 .card__number {
   text-align: center;
@@ -1941,6 +1977,11 @@ input::-webkit-inner-spin-button {
   color: black;
   font-size: 1.6rem;
   font-weight: 700;
+}
+@media (max-width: 767.98px) {
+  .size__desc {
+    font-size: 1.3rem;
+  }
 }
 
 .slide__product {
@@ -1981,6 +2022,12 @@ input::-webkit-inner-spin-button {
 @media (max-width: 991.98px) {
   .slide__show-nav {
     grid-auto-columns: calc(50% - 12px);
+  }
+}
+@media (max-width: 767.98px) {
+  .slide__show-nav {
+    grid-auto-columns: calc(50% - 12px);
+    gap: 40px;
   }
 }
 
@@ -2034,7 +2081,7 @@ input::-webkit-inner-spin-button {
   background-image: url("https://shop.mixigaming.com/wp-content/uploads/2021/01/Ao-ba-lo-Mixi-SO-QUA-SO-QUA-scaled.jpg");
   background-size: 6500px 6500px;
   top: 165px;
-  left: 880px;
+  left: 770px;
   display: none;
 }
 

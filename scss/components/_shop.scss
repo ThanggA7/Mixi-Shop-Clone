@@ -163,10 +163,16 @@ input::-webkit-inner-spin-button {
   width: 600px;
   height: 700px;
   object-fit: cover;
+  @include abstracts.breakpoint("xl") {
+    width: 450px;
+  }
+  @include abstracts.breakpoint("sm") {
+    width: 100%;
+  }
   @include abstracts.breakpoint("lg") {
     width: 100%;
   }
-  @include abstracts.breakpoint("sm") {
+  @include abstracts.breakpoint("md") {
     width: 100%;
   }
 }
@@ -178,18 +184,26 @@ input::-webkit-inner-spin-button {
   @include abstracts.breakpoint("sm") {
     width: 100%;
   }
+
+  @include abstracts.breakpoint("xl") {
+    width: 100%;
+  }
+  @include abstracts.breakpoint("md") {
+      width: 100%;
+      height: 205px;
+  }
 }
 
 .size {
   margin-top: 35px;
   display: flex;
   align-items: center;
-  gap: 160px;
+  justify-content: space-between;
   @include abstracts.breakpoint("lg") {
-    gap: 150px;
+    justify-content: space-between;
   }
   @include abstracts.breakpoint("sm") {
-    gap: 50px;
+    justify-content: space-between;
   }
 }
 
@@ -201,6 +215,9 @@ input::-webkit-inner-spin-button {
   height: 35px;
   border-radius: 15px;
   background-color: transparent;
+  @include abstracts.breakpoint("sm") {
+    width: 250px;
+  }
 }
 
 .act__cart {
@@ -210,6 +227,9 @@ input::-webkit-inner-spin-button {
   width: 250px;
   height: 35px;
   background-color: #dda592;
+  @include abstracts.breakpoint("sm") {
+    width: 200px;
+  }
 }
 .btn__cart {
   padding: 13px 30px;
@@ -258,6 +278,9 @@ input::-webkit-inner-spin-button {
   display: flex;
   align-items: center;
   gap: 25px;
+  @include abstracts.breakpoint("sm") {
+    gap: 55px;
+  }
 }
 .card__number {
   text-align: center;
@@ -275,6 +298,10 @@ input::-webkit-inner-spin-button {
   color: black;
   font-size: 1.6rem;
   font-weight: 700;
+
+  @include abstracts.breakpoint("md") {
+    font-size: 1.3rem;
+  }
 }
 .slide__product {
   margin-top: 30px;

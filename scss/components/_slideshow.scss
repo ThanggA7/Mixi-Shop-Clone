@@ -17,9 +17,15 @@
     @include abstracts.breakpoint("sm") {
       grid-auto-columns: 100%;
     }
+
     @include abstracts.breakpoint("lg") {
       grid-auto-columns: calc((100% / 2) - 12px);
     }
+    @include abstracts.breakpoint("md") {
+      grid-auto-columns: calc((100% / 2) - 12px);
+      gap: 40px;
+    }
+
   }
 }
 
