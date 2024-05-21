@@ -83,6 +83,8 @@
       display: none;
     }
   }
+
+  position: relative;
 }
 
 .phone,
@@ -116,4 +118,39 @@
   @include abstracts.breakpoint(lg) {
     display: block;
   }
+}
+
+.count {
+  color: black;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.cart:hover .cart__name {
+  color: #007784;
+}
+
+.cart:hover .count {
+  color: #007784;
+  border-color: #007784;
+}
+
+.cart__hover {
+  border-radius: 5px;
+  position: absolute;
+  width: 400px;
+  min-height: 250px;
+  border: 1px solid black;
+  background-color: white;
+  right: 0;
+  opacity: 0.9;
+  display: none;
+}
+.cart__name,
+.phone__number {
+  color: rgba(0, 0, 0, 0.757);
+}
+.cart:hover .cart__hover {
+  display: block;
 }

@@ -1,0 +1,43 @@
+.header__cart {
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+
+  a,
+  p {
+    font-size: 2.5rem;
+  }
+}
+
+.sp_cart {
+  color: black;
+}
+.co_cart:hover {
+  color: black;
+}
+.co_cart,
+.od_cart {
+  color: #cccccc;
+}
+
+.cart_noti {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 10px;
+}
+.cart_desc {
+  font-size: 1.6rem;
+  color: black;
+}
+.cart_btn {
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 15px 20px;
+  background-color: #25616c;
+}

@@ -1,7 +1,7 @@
 <div class="container">
   <div class="top-bar">
     <div class="top-bar__more">
-      <img src="./assets/icons/more.svg" alt="" class="top-bar__more--img" />
+      <img src="../assets/icons/more.svg" alt="" class="top-bar__more--img" />
     </div>
     <a href="/" class="logo">
       <img
@@ -11,13 +11,30 @@
       />
     </a>
     <button class="top-act__btn">
-      <img
-        style="width: 16.27px; height: 16px; font-size: 16px"
-        class="icon__search"
-        class="icon"
-        src="./assets/icons/search.svg"
-        alt=""
-      />
+      <svg
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="11.7659"
+          cy="11.7659"
+          r="8.98856"
+          stroke="#1A162E"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M18.0176 18.4844L21.5416 21.9992"
+          stroke="#1A162E"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
     </button>
     <nav class="navbar">
       <ul class="navbar__list">
@@ -49,14 +66,19 @@
         </a>
         <div class="top-act-group__line"></div>
 
-        <a href="#!" class="cart">
-          <span class="cart">GIỎ HÀNG</span>
+        <a href="../cart/shop-cart.html" class="cart">
+          <span class="cart__name">GIỎ HÀNG</span>
           <i class="icon gg-shopping-cart"></i>
+          <p class="count" id="count">0</p>
         </a>
       </div>
+
+      <div class="cart__hover"></div>
     </div>
     <div class="cart">
-      <a href="#!"> <i class="icon-responsive icon gg-shopping-cart"></i></a>
+      <a href="../cart/shop-cart.html">
+        <i class="icon-responsive icon gg-shopping-cart"></i
+      ></a>
     </div>
   </div>
 </div>
