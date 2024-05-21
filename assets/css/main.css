@@ -1437,11 +1437,6 @@ textarea {
   }
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .logo__image {
   width: 151px;
   height: 90px;
@@ -1451,7 +1446,6 @@ textarea {
     width: 120.66px;
     height: 70px;
     object-fit: cover;
-    margin-left: 35px;
   }
 }
 
