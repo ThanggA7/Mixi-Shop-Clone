@@ -1437,6 +1437,11 @@ textarea {
   }
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .logo__image {
   width: 151px;
   height: 90px;

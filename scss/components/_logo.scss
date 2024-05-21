@@ -1,6 +1,9 @@
 @use "../abstracts";
 
 .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   &__image {
     width: 151px;
     height: 90px;
