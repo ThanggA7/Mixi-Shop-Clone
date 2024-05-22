@@ -154,3 +154,10 @@
 .cart:hover .cart__hover {
   display: block;
 }
+
+.hide__menu-icon {
+  @include abstracts.breakpoint(lg) {
+    // display: block;
+    display: none;
+  }
+}

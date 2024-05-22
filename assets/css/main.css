@@ -1365,6 +1365,12 @@ textarea {
   display: block;
 }
 
+@media (max-width: 991.98px) {
+  .hide__menu-icon {
+    display: none;
+  }
+}
+
 .footer {
   margin-top: 90px;
   background-color: #fff;
@@ -2136,6 +2142,19 @@ input::-webkit-inner-spin-button {
 .header__cart a,
 .header__cart p {
   font-size: 2.5rem;
+}
+@media (max-width: 991.98px) {
+  .header__cart a,
+  .header__cart p {
+    font-size: 1.9rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .header__cart a,
+  .header__cart p {
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
 }
 
 .sp_cart {

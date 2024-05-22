@@ -1,3 +1,4 @@
+@use "../abstracts";
 .header__cart {
   margin-top: 35px;
   display: flex;
@@ -8,6 +9,13 @@
   a,
   p {
     font-size: 2.5rem;
+    @include abstracts.breakpoint("lg") {
+      font-size: 1.9rem;
+    }
+    @include abstracts.breakpoint("sm") {
+      font-size: 1.3rem;
+      font-weight: 500;
+    }
   }
 }
 
