@@ -1458,6 +1458,43 @@ textarea {
   }
 }
 
+.banner {
+  overflow: hidden;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(0);
+  }
+  30% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  55% {
+    transform: translateX(-200%);
+  }
+  75% {
+    transform: translateX(-200%);
+  }
+  80% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(-300%);
+  }
+}
+.wrapper {
+  animation: slide 16s infinite;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
 .banner__mixi {
   width: 100%;
   object-fit: cover;
@@ -1860,12 +1897,12 @@ input::-webkit-inner-spin-button {
 
 .ao_img {
   width: 600px;
-  height: 700px;
   object-fit: cover;
 }
 @media (max-width: 1199.98px) {
   .ao_img {
     width: 450px;
+    min-height: 700px;
   }
 }
 @media (max-width: 575.98px) {
@@ -1876,6 +1913,7 @@ input::-webkit-inner-spin-button {
 @media (max-width: 991.98px) {
   .ao_img {
     width: 100%;
+    min-height: 700px;
   }
 }
 @media (max-width: 767.98px) {
@@ -1886,7 +1924,7 @@ input::-webkit-inner-spin-button {
 
 .size__img {
   width: 550px;
-  height: 300px;
+  min-height: 300px;
   object-fit: cover;
 }
 @media (max-width: 575.98px) {
@@ -1902,7 +1940,6 @@ input::-webkit-inner-spin-button {
 @media (max-width: 767.98px) {
   .size__img {
     width: 100%;
-    height: 205px;
   }
 }
 
@@ -1968,6 +2005,11 @@ input::-webkit-inner-spin-button {
   color: black;
 }
 @media (max-width: 575.98px) {
+  .info__product-title {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 991.98px) {
   .info__product-title {
     margin-top: 20px;
   }
@@ -2117,22 +2159,6 @@ input::-webkit-inner-spin-button {
   .image {
     grid-auto-columns: calc(50% - 12px);
   }
-}
-
-#mirro {
-  width: 150px;
-  height: 150px;
-  position: absolute;
-  border-radius: 10px;
-  background-image: url("https://shop.mixigaming.com/wp-content/uploads/2021/01/Ao-ba-lo-Mixi-SO-QUA-SO-QUA-scaled.jpg");
-  z-index: 1000;
-  display: none;
-  pointer-events: none;
-  transform: translate(-50%, -50%);
-}
-
-#image {
-  display: block;
 }
 
 .header__cart {
