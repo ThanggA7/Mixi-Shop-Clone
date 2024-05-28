@@ -1,4 +1,3 @@
-// Function to load content and cache it in localStorage
 function load(selector, path) {
   const cached = localStorage.getItem(path);
   if (cached) {

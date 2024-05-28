@@ -1209,6 +1209,9 @@ textarea {
 .header {
   padding: 5px;
   background-color: var(--header-bg-color);
+  position: sticky;
+  top: -3px;
+  z-index: 1;
 }
 
 .top-bar {
