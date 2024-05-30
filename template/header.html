@@ -47,8 +47,9 @@
         <li>
           <a href="../" class="navbar__link navbar__link-home">HOME </a>
         </li>
-        <li>
-          <a href="#!" class="navbar__link navbar__link-list"
+        <li id="product-more-list" class="navbar__link-list">
+          <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+          <label for="menu-toggle" class="menu-button navbar__link"
             >DANH MỤC SẢN PHẨM
             <img
               class="icon"
@@ -56,11 +57,9 @@
               alt=""
               class="navbar__arrow"
             />
-          </a>
-        </li>
+          </label>
 
-        <div class="navbar__product-more">
-          <div class="product-more-list">
+          <div id="product-more-list" class="product-more-list">
             <div class="container">
               <div class="row">
                 <div class="col-lg-4">
@@ -136,7 +135,8 @@
               </div>
             </div>
           </div>
-        </div>
+        </li>
+
         <li>
           <a href="../gioi-thieu/" class="navbar__link navbar__link-noti"
             >THÔNG BÁO
@@ -145,23 +145,75 @@
       </ul>
     </nav>
 
-    <div class="top-act">
-      <div class="top-act__group">
+    <ul class="top-act">
+      <li class="phone-group">
         <a href="tel:0822221992" class="phone">
           <i class="icon gg-phone"></i>
           <span class="phone__number">0822221992</span>
         </a>
-        <div class="top-act-group__line"></div>
+      </li>
+      <li class="top-act-group__line"></li>
 
+      <li class="cart-group">
         <a href="../cart/shop-cart.html" class="cart">
-          <span class="cart__name">GIỎ HÀNG</span>
+          <span class="cart__name nav">GIỎ HÀNG</span>
           <i class="icon gg-shopping-cart"></i>
           <p class="count" id="count">0</p>
         </a>
-      </div>
 
-      <div class="cart__hover"></div>
-    </div>
+        <div class="cart__hover">
+          <div class="cart__hover--top">
+            <div class="cart__hover--none">
+              <span class="cart__hover--title--text">GIỎ HÀNG</span>
+              <span class="cart__hover--title--count"
+                >Chưa có sản phẩm trong giỏ hàng.</span
+              >
+            </div>
+          </div>
+
+          <div class="cart__hover--content">
+            <span class="cart__hover--title--text">GIỎ HÀNG</span>
+            <div class="cart_hover--item">
+              <img
+                src="../assets/img/products/prd-01.jpeg"
+                alt=""
+                class="cart__hover--img"
+              />
+              <div class="cart__hover--info">
+                <a href="#!" class="cart__hover--name"> Cốc Mixi 1200ml</a>
+                <span class="cart__hover--price">250,000 ₫</span>
+              </div>
+
+              <a href="#!"><i class="gg-close-o"></i></a>
+            </div>
+            <div class="cart_hover--item">
+              <img
+                src="../assets/img/products/prd-02.jpeg"
+                alt=""
+                class="cart__hover--img"
+              />
+              <div class="cart__hover--info">
+                <a href="#!" class="cart__hover--name"> Áo Sologan Mixi</a>
+                <span class="cart__hover--price">250,000 ₫</span>
+              </div>
+              <a href="#!"><i class="gg-close-o"></i></a>
+            </div>
+            <div class="cart_hover--item">
+              <img
+                src="../assets/img/products/prd-03.jpeg"
+                alt=""
+                class="cart__hover--img"
+              />
+              <div class="cart__hover--info">
+                <a href="#!" class="cart__hover--name"> Áo phông Mixi </a>
+                <span class="cart__hover--price">250,000 ₫</span>
+              </div>
+              <a href="#!"><i class="gg-close-o"></i></a>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
     <div class="cart">
       <a href="../cart/shop-cart.html">
         <i class="icon-responsive icon gg-shopping-cart"></i

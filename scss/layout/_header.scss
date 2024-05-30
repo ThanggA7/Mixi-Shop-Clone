@@ -41,6 +41,7 @@
   }
 
   &__link {
+    cursor: pointer;
     position: relative;
     font-size: 1.2rem;
     font-weight: 700;
@@ -49,7 +50,7 @@
   }
 
   &__link::after {
-    margin-top: 5px;
+    margin-top: 7px;
     position: absolute;
     display: none;
     content: "";
@@ -70,14 +71,12 @@
 }
 
 .top-act {
+  @extend %flexItemsCenter;
+  gap: 20px;
   @include abstracts.breakpoint(lg) {
     display: none;
   }
   margin-left: auto;
-  &__group {
-    @extend %flexItemsCenter;
-    gap: 20px;
-  }
 
   &__btn {
     margin-left: 20px;
@@ -95,6 +94,15 @@
   @extend %flexItemsCenter;
   font-size: 1.2rem;
   font-weight: 700;
+
+  &:hover .cart__name {
+    color: #007784;
+  }
+
+  &:hover .count {
+    color: #007784;
+    border-color: #007784;
+  }
 }
 
 .phone__number {
@@ -129,34 +137,6 @@
   border: 1px solid black;
 }
 
-.cart:hover .cart__name {
-  color: #007784;
-}
-
-.cart:hover .count {
-  color: #007784;
-  border-color: #007784;
-}
-
-.cart__hover {
-  border-radius: 5px;
-  position: absolute;
-  width: 400px;
-  min-height: 250px;
-  border: 1px solid black;
-  background-color: white;
-  right: 0;
-  opacity: 0.9;
-  display: none;
-}
-.cart__name,
-.phone__number {
-  color: rgba(0, 0, 0, 0.757);
-}
-// .top-act:hover .cart__hover {
-//   display: block;
-// }
-
 .hide__menu-icon {
   @include abstracts.breakpoint(lg) {
     // display: block;
@@ -165,6 +145,7 @@
 }
 
 .product-more-list {
+  display: none;
   position: absolute;
   left: 0;
   top: 102px;
@@ -173,12 +154,11 @@
   background-color: #f5f0ea;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
-.navbar__product-more {
-  display: none;
-}
-.navbar__link-list:active .navbar__product-more {
-  display: block;
-}
+
+// .navbar__link-list:hover .product-more-list {
+//   display: block;
+// }
+
 .more-list-title {
   margin-top: 35px;
   font-weight: 600;
