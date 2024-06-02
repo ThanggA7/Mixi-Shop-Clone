@@ -145,3 +145,11 @@
 .menu-toggle:checked ~ .product-more-list {
   display: block;
 }
+
+.cart_btn {
+  border-radius: 5px;
+  font-size: 600;
+  color: white;
+  padding: 15px 20px;
+  background-color: #25616c;
+}

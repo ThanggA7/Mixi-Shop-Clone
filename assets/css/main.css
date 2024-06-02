@@ -2384,6 +2384,14 @@ input::-webkit-inner-spin-button {
   display: block;
 }
 
+.cart_btn {
+  border-radius: 5px;
+  font-size: 600;
+  color: white;
+  padding: 15px 20px;
+  background-color: #25616c;
+}
+
 html.dark {
   --body-bg: #292e39;
   --text-color: #ffffff;
