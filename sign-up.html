@@ -106,7 +106,7 @@
               <div class="act-register">
                 <button class="btn" type="submit">Register Account</button>
               </div>
-              <p style="width: 426px; text-align: center; margin-top: 25px">
+              <p style="width: 100%; text-align: center; margin-top: 25px">
                 OR
               </p>
               <div class="other__register">
@@ -128,14 +128,10 @@
   <style>
     @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
     body {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
       background-color: white;
     }
     .register-form {
-      padding: 25px 70px;
+      padding: 30px 70px;
       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
     .register__title {
@@ -175,7 +171,7 @@
       font-size: 1.4rem;
       font-weight: 500;
       padding: 24px 30px;
-      width: 426px;
+      width: 100%;
       height: 64px;
       flex-shrink: 0;
       border-radius: 6px;
@@ -194,7 +190,7 @@
     .act-register {
       margin-top: 39px;
       display: flex;
-      width: 426px;
+      width: 100%;
       align-items: center;
       background-color: #1565d8;
       justify-content: center;
@@ -211,7 +207,7 @@
     }
     .other__register {
       margin-top: 10px;
-      width: 426px;
+      width: 100%;
       padding: 21px 43px;
       display: flex;
       align-items: center;
@@ -229,11 +225,55 @@
       color: rgba(0, 0, 0, 0.792);
     }
     .body {
-      min-width: 500px;
+      margin: 0 auto;
+      max-width: 600px;
     }
     /* Mobile */
-    @media screen and (max-width: 767px) {
+    /* PC */
+    @media screen and (min-width: 992px) {
+      .register-form {
+        margin-top: 30px;
+      }
+    }
+
+    /* Tablet & mobile */
+    @media screen and (max-width: 991px) {
+      .register-form {
+        margin-top: 35px;
+      }
+    }
+
+    /* Tablet */
+    @media screen and (min-width: 768px) and (max-width: 991px) {
       .body {
+        max-width: 900px;
+      }
+
+      .input {
+        width: 100%;
+      }
+    }
+
+    /* Mobile */
+    @media screen and (max-width: 767px) {
+      .register__title {
+        font-size: 2rem;
+      }
+      .register-form {
+        padding: 20px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      }
+
+      .btn {
+        padding: 23px;
+      }
+
+      .other__register {
+        padding: 21px;
+      }
+
+      .input__register {
+        margin-top: 10px;
       }
     }
   </style>
