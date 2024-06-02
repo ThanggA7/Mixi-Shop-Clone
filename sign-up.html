@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      property="og:image"
+      content="https://shop.mixigaming.com/wp-content/uploads/2020/09/118070490_238469837342215_4161744696367508805_n.jpg"
+    />
+
+    <meta property="og:image:width" content="960" />
+    <meta property="og:image:height" content="960" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta
+      name="description"
+      content="Website chính thức của MixiShop. Chuyên cung cấp đồ hiệu Mixi, đồ lưu niệm, áo Refund Gaming, áo PUBG, CSGO. Ship toàn quốc nhanh chóng, đảm bảo."
+    />
+    <title>Register - Mixi Shop</title>
+
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- css.gg -->
+    <link
+      href="https://unpkg.com/css.gg@2.0.0/icons/css/close-o.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/css.gg@2.0.0/icons/css/phone.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://unpkg.com/css.gg@2.0.0/icons/css/instagram.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/css.gg@2.0.0/icons/css/facebook.css"
+      rel="stylesheet"
+    />
+    <!-- link style -->
+    <link
+      href="https://unpkg.com/css.gg@2.0.0/icons/css/shopping-cart.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <script src="./assets/js/script.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="body">
+          <div class="register-form">
+            <form action="#!" method="post">
+              <h1 class="register__title">Register Mixi Shop Account!</h1>
+              <p class="register__desc">Đăng ký để sử dụng được dịch vụ !!!</p>
+              <div class="input__register">
+                <label for="uname"><b>Email address*</b></label>
+                <input
+                  class="input gmail"
+                  type="text"
+                  placeholder="Enter email address"
+                  required
+                />
+                <label for="uname"><b>Create password*</b></label>
+                <input
+                  class="input password"
+                  type="password"
+                  placeholder="Password"
+                  required
+                />
+                <label for="uname"><b>Repeat password*</b></label>
+                <input
+                  class="input repassword"
+                  type="password"
+                  placeholder="Password"
+                  required
+                />
+              </div>
+
+              <div class="agree__check">
+                <input type="radio" id="agree" name="agree" value="agree" />
+                <label for="agree"> I agree to terms & conditions </label>
+              </div>
+
+              <div class="act-register">
+                <button class="btn" type="submit">Register Account</button>
+              </div>
+              <p style="width: 426px; text-align: center; margin-top: 25px">
+                OR
+              </p>
+              <div class="other__register">
+                <img src="./assets/icons/social/google_register.svg" alt="" />
+                <a href="#!">Register with Google</a>
+              </div>
+
+              <div class="sign-up">
+                <a href="./sign-in.html" class="sign-in__link"
+                  >Đã có tài khoản? Đăng nhập.</a
+                >
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: white;
+    }
+    .register-form {
+      padding: 25px 70px;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    .register__title {
+      color: #000;
+      font-family: Inter;
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    .register__desc {
+      margin-top: 10px;
+      max-width: 411px;
+      color: #8692a6;
+      font-family: Inter;
+      font-size: 1.8rem;
+      font-weight: 400;
+      line-height: 1.55;
+    }
+    .input__register {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+    .uname {
+    }
+    label {
+      color: #696f79;
+      font-family: Inter;
+      font-size: 1.6rem;
+      font-weight: 500;
+      margin-top: 24px;
+    }
+    .input {
+      color: black;
+      font-family: Inter;
+      font-size: 1.4rem;
+      font-weight: 500;
+      padding: 24px 30px;
+      width: 426px;
+      height: 64px;
+      flex-shrink: 0;
+      border-radius: 6px;
+      border: 1px solid #1565d8;
+      margin-top: 14px;
+    }
+
+    .agree__check {
+      margin-top: 32px;
+      color: #696f79;
+      font-family: Inter;
+      font-size: 1.6rem;
+      font-weight: 500;
+    }
+
+    .act-register {
+      margin-top: 39px;
+      display: flex;
+      width: 426px;
+      align-items: center;
+      background-color: #1565d8;
+      justify-content: center;
+      box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.08);
+      border-radius: 6px;
+    }
+
+    .btn {
+      padding: 23px 147px;
+      color: #fff;
+      font-family: Inter;
+      font-size: 1.6rem;
+      font-weight: 500;
+    }
+    .other__register {
+      margin-top: 10px;
+      width: 426px;
+      padding: 21px 43px;
+      display: flex;
+      align-items: center;
+      gap: 70px;
+      border-radius: 6px;
+      background: #fff;
+      box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.08);
+    }
+    .sign-up {
+      margin-top: 25px;
+      text-align: center;
+    }
+    .sign-in__link {
+      font-size: 1.4rem;
+      color: rgba(0, 0, 0, 0.792);
+    }
+    .body {
+      min-width: 500px;
+    }
+    /* Mobile */
+    @media screen and (max-width: 767px) {
+      .body {
+      }
+    }
+  </style>
+</html>

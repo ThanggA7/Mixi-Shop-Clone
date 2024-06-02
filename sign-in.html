@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      property="og:image"
+      content="https://shop.mixigaming.com/wp-content/uploads/2020/09/118070490_238469837342215_4161744696367508805_n.jpg"
+    />
+
+    <meta property="og:image:width" content="960" />
+    <meta property="og:image:height" content="960" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta
+      name="description"
+      content="Website chính thức của MixiShop. Chuyên cung cấp đồ hiệu Mixi, đồ lưu niệm, áo Refund Gaming, áo PUBG, CSGO. Ship toàn quốc nhanh chóng, đảm bảo."
+    />
+    <title>Login - Mixi Shop</title>
+
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- css.gg -->
+    <link
+      href="https://unpkg.com/css.gg@2.0.0/icons/css/close-o.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/css.gg@2.0.0/icons/css/phone.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://unpkg.com/css.gg@2.0.0/icons/css/instagram.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/css.gg@2.0.0/icons/css/facebook.css"
+      rel="stylesheet"
+    />
+    <!-- link style -->
+    <link
+      href="https://unpkg.com/css.gg@2.0.0/icons/css/shopping-cart.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <script src="./assets/js/script.js"></script>
+  </head>
+  <body>
+    <main class="main__login">
+      <div class="container">
+        <form action="" method="post">
+          <h1 class="login__title">Mixi Shop</h1>
+          <p class="login__desc">Đăng nhập để sử dụng dịch vụ !!!</p>
+          <div class="input__login">
+            <input
+              class="account"
+              type="text"
+              placeholder="abcd@gmail.com"
+              required
+            />
+            <input
+              class="password"
+              type="password"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <p class="other_login">Or continue with</p>
+          <div class="login__social">
+            <div class="item_login-social">
+              <a href="#!">
+                <img
+                  class="login__social-img"
+                  src="./assets/icons/social/google.svg"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div class="item_login-social">
+              <a href="#!">
+                <img
+                  class="login__social-img"
+                  src="./assets/icons/social/meta.svg"
+                  alt=""
+              /></a>
+            </div>
+            <div class="item_login-social">
+              <a href="#!">
+                <img
+                  class="login__social-img"
+                  src="./assets/icons/social/apple.svg"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="login-act">
+            <button class="login__btn" type="submit">Login</button>
+          </div>
+
+          <div class="other">
+            <a href="./forgot.html" class="other__link">Forgot password</a>
+            <a href="./sign-up.html" class="other__link">Sign up</a>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      .main__login {
+        padding: 75px 50px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      }
+
+      .login__social-img {
+        width: 40px;
+        object-fit: cover;
+      }
+
+      .login__title {
+        color: #292929;
+        font-family: Inter;
+        font-size: 3rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+
+      .login__desc {
+        margin-top: 12px;
+        color: #545454;
+        font-family: "IBM Plex Serif";
+        font-size: 1.8rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+
+      .input__login {
+        margin-top: 50px;
+      }
+
+      input {
+        padding: 24px;
+        color: #0c0c0c;
+        font-family: Inter;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        width: 440px;
+        height: 40px;
+        border-radius: 10px;
+        border: 1px solid #8ac0ff;
+        background: #fff;
+        background-color: transparent;
+      }
+
+      .input__login {
+        gap: 16px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+      .item_login-social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 136px;
+        height: 71px;
+        background-color: #f7f7f7;
+      }
+      .login__social {
+        margin-top: 36px;
+        display: flex;
+        align-items: center;
+        gap: 21px;
+      }
+
+      .other_login {
+        margin-top: 47px;
+        color: #4f4f4f;
+        font-family: Inter;
+        font-size: 1.6rem;
+        font-weight: 400;
+      }
+      .login-act {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .login__btn {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 6px;
+        background-color: #0366ff;
+        padding: 21px 132px;
+        color: #fff;
+        font-family: "IBM Plex Serif";
+        font-size: 1.6rem;
+        font-weight: 400;
+        margin-top: 47px;
+      }
+      .other__link {
+        color: #4f4f4f;
+        font-family: Inter;
+        font-size: 1.6rem;
+        font-weight: 400;
+      }
+      .other {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 30px;
+      }
+    </style>
+  </body>
+</html>
