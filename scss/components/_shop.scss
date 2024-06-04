@@ -161,10 +161,11 @@ input::-webkit-inner-spin-button {
 
 .ao_img {
   width: 600px;
+  height: 750px;
+
   object-fit: cover;
   @include abstracts.breakpoint("xl") {
     width: 450px;
-    min-height: 700px;
   }
   @include abstracts.breakpoint("sm") {
     width: 100%;

@@ -1963,12 +1963,12 @@ input::-webkit-inner-spin-button {
 
 .ao_img {
   width: 600px;
+  height: 750px;
   object-fit: cover;
 }
 @media (max-width: 1199.98px) {
   .ao_img {
     width: 450px;
-    min-height: 700px;
   }
 }
 @media (max-width: 575.98px) {
