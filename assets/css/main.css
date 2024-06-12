@@ -1200,7 +1200,7 @@ textarea {
     --grid-gutter-y: 72px;
   }
 }
-.phone,
+.menu__social, .phone,
 .cart, .top-act, .navbar__list, .top-bar {
   display: flex;
   align-items: center;
@@ -1460,6 +1460,7 @@ textarea {
   z-index: 2;
   transform: translate(-100%);
   transition: 0.5s ease;
+  padding: 30px;
 }
 
 .menu__checkbox {
@@ -1473,6 +1474,20 @@ textarea {
 
 .menu__checkbox:checked ~ .menu__drawer {
   transform: translate(0);
+}
+
+.list__menu li a {
+  color: #007784;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.list__menu li {
+  margin-top: 25px;
+}
+
+.menu__social {
+  gap: 15px;
 }
 
 .footer {
