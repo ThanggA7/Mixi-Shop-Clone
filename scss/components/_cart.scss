@@ -13,7 +13,7 @@
       font-size: 1.9rem;
     }
     @include abstracts.breakpoint("sm") {
-      font-size: 1.3rem;
+      font-size: 1.3rem;  
       font-weight: 500;
     }
   }
