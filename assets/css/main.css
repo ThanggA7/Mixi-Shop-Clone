@@ -2065,15 +2065,17 @@ input::-webkit-inner-spin-button {
   margin-top: 35px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 155px;
 }
 @media (max-width: 991.98px) {
   .size {
     justify-content: space-between;
+    gap: 0;
   }
 }
 @media (max-width: 575.98px) {
   .size {
+    gap: 0;
     justify-content: space-between;
   }
 }
@@ -2440,17 +2442,6 @@ input::-webkit-inner-spin-button {
   color: white;
   padding: 15px 20px;
   background-color: #25616c;
-}
-
-html.dark {
-  --body-bg: #292e39;
-  --text-color: #ffffff;
-  --icon--color: brightness(0) saturate(100%) invert(100%) sepia(0%)
-    saturate(0%) hue-rotate(310deg) brightness(111%) contrast(101%);
-  --header-bg-color: #171c28;
-  --top-act-group-color: #292e39;
-  --top-act-group-shadow: rgba(0, 0, 0, 0.2);
-  --top-act-group-saparate: #ededf6;
 }
 
 html {

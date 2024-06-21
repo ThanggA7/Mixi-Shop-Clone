@@ -201,11 +201,13 @@ input::-webkit-inner-spin-button {
   margin-top: 35px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 155px;
   @include abstracts.breakpoint("lg") {
     justify-content: space-between;
+    gap: 0;
   }
   @include abstracts.breakpoint("sm") {
+    gap: 0;
     justify-content: space-between;
   }
 }
